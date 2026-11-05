@@ -1,7 +1,9 @@
 package collection;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -44,6 +46,19 @@ public class Main {
 //        studentList.remove("Khánh");
         System.out.println("---------------------------");
         System.out.println(studentList);
+
+
+        // Map : key - value
+        Map<String, String> dictionary = new HashMap<>();
+        // thêm 1 cặp key -value
+        dictionary.put("hello","xin chào");
+        dictionary.put("name","tên");
+        dictionary.put("subject","môn hoc");
+        System.out.println("-------------------------");
+        System.out.println(dictionary);
+        dictionary.put("subject","Chủ đề");
+        System.out.println("-------------------------");
+        System.out.println(dictionary);
 
     }
 }
